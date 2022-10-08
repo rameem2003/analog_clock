@@ -34,7 +34,7 @@ body{
 .clock p{
     display: inline;
     position: absolute;
-    top: 80%;
+    top: 75%;
     left: 50%;
     font-size: 30px;
     font-weight: bold;
@@ -44,7 +44,7 @@ body{
 .clock h3{
     display: inline;
     position: absolute;
-    top: 75%;
+    top: 70%;
     left: 50%;
     font-size: 20px;
     transform: translateX(-50%);
@@ -72,7 +72,6 @@ body{
 }
 
 .clock .number{
-    --rotation: 0deg;
     position: absolute;
     width: 100%;
     height: 100%;
@@ -80,21 +79,20 @@ body{
     text-align: center;
     font-size: 25px;
     font-weight: bold;
-    transform: rotate(var(--rotation));
 }
 
-.clock .number.number1{--rotation: 30deg;}
-.clock .number.number2{--rotation: 60deg;}
-.clock .number.number3{--rotation: 90deg;}
-.clock .number.number4{--rotation: 120deg;}
-.clock .number.number5{--rotation: 150deg;}
-.clock .number.number6{--rotation: 180deg;}
-.clock .number.number7{--rotation: 210deg;}
-.clock .number.number8{--rotation: 240deg;}
-.clock .number.number9{--rotation: 270deg;}
-.clock .number.number10{--rotation: 300deg;}
-.clock .number.number11{--rotation: 330deg;}
-.clock .number.number12{--rotation: 360deg;}
+.clock .number.number1{transform: rotate(30deg);}
+.clock .number.number2{transform: rotate(60deg);}
+.clock .number.number3{transform: rotate(90deg);}
+.clock .number.number4{transform: rotate(120deg);}
+.clock .number.number5{transform: rotate(150deg);}
+.clock .number.number6{transform: rotate(180deg);}
+.clock .number.number7{transform: rotate(210deg);}
+.clock .number.number8{transform: rotate(240deg);}
+.clock .number.number9{transform: rotate(270deg);}
+.clock .number.number10{transform: rotate(300deg);}
+.clock .number.number11{transform: rotate(330deg);}
+.clock .number.number12{transform: rotate(360deg);}
 
 
 .clock .hand{

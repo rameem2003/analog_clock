@@ -1,14 +1,7 @@
-
-// function setRotation(element, rotationRatio){
-//     element.style.setProperty('--rotation', rotationRatio * 360);
-// }
-
 function setClock(){
     let hourHand = document.getElementById("hour");
     let minuteHand = document.getElementById("minute");
     let secondHand = document.getElementById("second");
-
-    console.log(secondHand);
 
     const curDate = new Date();
     const secondRatio = curDate.getSeconds() / 60;
@@ -19,12 +12,6 @@ function setClock(){
     minuteHand.style.transform = `rotate(${minuteRatio * 360}deg)`;
     hourHand.style.transform = `rotate(${hourRatio * 360}deg)`;
     setInterval(setClock, 1000);
-
 }
-
-
-
-
-
 
 setClock();
