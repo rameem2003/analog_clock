@@ -41,6 +41,23 @@ body{
     transform: translateX(-50%);
 }
 
+.clock h3{
+    display: inline;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    font-size: 20px;
+    transform: translateX(-50%);
+}
+
+.clock h4{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    font-weight: bold;
+    transform: translateX(-50%);
+}
+
 .clock::after{
     content: '';
     position: absolute;
