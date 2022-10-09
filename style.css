@@ -83,6 +83,7 @@ body{
     text-align: center;
     font-size: 25px;
     font-weight: bold;
+    padding: 10px;
 }
 
 .clock .number.number1{transform: rotate(30deg);}
@@ -133,6 +134,8 @@ body{
     height: 48%;
     width: 8px;
     background-color: black;
+    padding: 4px;
+    border-radius: 20px 20px 0 0;
 }
  
  
@@ -140,6 +143,8 @@ body{
     height: 40%;
     width: 10px;
     background-color: blue;
+    padding: 5px;
+    border-radius: 50% 50% 0 0;
 }
 
 /* responsive */
