@@ -7,11 +7,15 @@
 
 
 body{
-    background-color: rgb(0, 132, 255);
+    /* background-color: rgb(0, 132, 255); */
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
+    background-image: linear-gradient(-45deg, blue, rgb(7, 114, 133), rgb(255, 0, 234));
+    background-size: 300% 300%;
+    animation: bg 9s infinite linear;
+    overflow: hidden;
 }
 
 .clock{
@@ -22,7 +26,7 @@ body{
     border: 12px solid black;
     position: relative;
 }
-.clock span{
+.clock #brand_name{
     position: absolute;
     top: 20%;
     left: 50%;
@@ -95,6 +99,21 @@ body{
 .clock .number.number12{transform: rotate(360deg);}
 
 
+.clock .number.number.number1 > span{ transform: rotate(330deg); display: block;}
+.clock .number.number.number2 > span{ transform: rotate(300deg); display: block;}
+.clock .number.number.number3 > span{ transform: rotate(270deg); display: block;}
+.clock .number.number.number4 > span{ transform: rotate(240deg); display: block;}
+.clock .number.number.number5 > span{ transform: rotate(208deg); display: block;}
+.clock .number.number.number6 > span{ transform: rotate(180deg); display: block;}
+.clock .number.number.number7 > span{ transform: rotate(150deg); display: block;}
+.clock .number.number.number8 > span{ transform: rotate(120deg); display: block;}
+.clock .number.number.number9 > span{ transform: rotate(90deg); display: block;}
+.clock .number.number.number10 > span{ transform: rotate(60deg); display: block;}
+.clock .number.number.number11 > span{ transform: rotate(30deg); display: block;}
+.clock .number.number.number12 > span{ transform: rotate(0deg); display: block;}
+
+
+
 .clock .hand{
     position: absolute;
     height: 45%;
@@ -121,4 +140,39 @@ body{
     height: 40%;
     width: 10px;
     background-color: blue;
+}
+
+/* responsive */
+@media screen and (max-width: 500px) {
+    .clock{
+        width: 350px;
+        height: 350px;
+    }
+
+    .clock #brand_name{
+        font-size: 25px;
+    }
+
+    .clock h4{
+        font-size: 13px;
+    }
+
+    .clock h3{
+        font-size: 15px;
+    }
+
+    .clock p{
+        font-size: 25px;
+    }
+
+    .clock .number{
+        font-size: 20px;
+    }
+}
+/* responsive end */
+
+@keyframes bg {
+    0%{background-position: 0% 50%;}
+    50%{background-position: 100% 50%;}
+    100%{background-position: 0% 50%;}
 }
