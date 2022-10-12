@@ -125,13 +125,13 @@ body{
 }
 
 .clock .hand.second{
-    height: 50%;
+    height: 48%;
     width: 3px;
     background-color: red;
 }
  
 .clock .hand.minute{
-    height: 48%;
+    height: 43%;
     width: 8px;
     background-color: black;
     padding: 4px;
